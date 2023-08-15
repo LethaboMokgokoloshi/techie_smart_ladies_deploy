@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Sign In</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Sign Up</title>
 </head>
+<!-- signup -->
 <body>
-    <div class="container">
-        <h1>Sign In</h1>
-        <form>
-            <div class="form-group">
+ 
+      <main class="main3">
+        <section class="signin-form">
+          <div class="signin_img" margin-bottom="5px">
+    
+      <div class="signup_form">       
+        <section class="container3">
+
+            <form action="signin.html" method="POST" class="signin-container">
+                
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
+                
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Sign In</button>
+                
+						<button type="submit" class="signup_btn"><b>Sign up</b></button>
+
+            <div class="signup-link">
+              Don't have an account? <a href="signup.html">Click here to sign up</a>.
+          </div>
         </form>
-    </div>
+        
+        </section>
+    </main>
+  
+    
+      <script src="https://kit.fontawesome.com/2487134076.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
+

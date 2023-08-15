@@ -1,33 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>sign Up</title>
+
+  <script>
+    function showSuccessMessage() {
+        document.getElementById("successMessage").style.display = "block";
+
+        setTimeout(function() {
+            window.location.href = "signin.html";
+        }, 3000); 
+    }
+</script>
 
 </head>
+<!-- singup -->
 <body>
-    <h2>Sign Up</h2>
-    <form id="signup-form">
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" required><br><br>
+ 
+      <main class="main3">
+        <section class="signup-form">
+          <div class="signup_img" margin-bottom="5px">
+    
+      <div class="signup_form">       
+        <section class="container3">
+
+            <form action="signup.html" method="POST" class="signup-container">
+                
+              <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+          
+						<button type="submit" class="signup_btn"><b>Sign up</b></button>
+
+            <!-- Success message section -->
+          <div id="successMessage" style="display: none; text-align: center;">
+            Successfully registered! Redirecting to the signin page...
+        </div>
+
+        <div class="signup-link">
+            Have an account? <a href="signin.html">Sign in Here</a>.
+        </div>
+        <div class="terms">
+            By signing up, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+        </div>
+
+        </form>
         
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <label for="confirm-password">Confirm Password:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
-        
-        <input type="submit" value="Sign Up">
-    </form>
+        </section>
+    </main>
+   
+    
+      <script src="https://kit.fontawesome.com/2487134076.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

@@ -68,3 +68,6 @@ This approach ensures that AgriGrowth aligns with the broader global goals of pr
 ## Authors
   AgriGrowth was developed by the Techie-Smart Ladies
   
+## Deployment
+  Deployed with vercel
+  

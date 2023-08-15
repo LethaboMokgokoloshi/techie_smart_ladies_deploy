@@ -170,10 +170,55 @@ body {
   background-color: #678479;
 }
 
-
 /* ************** */
-/* Main */
+/* Carousel */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
+.hero-section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.hero-section__text h1 {
+  margin: 0;
+  padding: 20px;
+  background: rgba(34, 34, 34, 0.7);
+}
+
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel img {
+  width: 130vw;
+  object-fit: contain;
+  height: 130vh;
+}
 
 
 /* ************** */
@@ -402,11 +447,7 @@ h2 {
 }
 
 /* ----------------------------------------Donation section------------------------------------------------  */
-.main-container{
-  /* height: 100vh;
-   background-color: blue; */
-  /* overflow: visible; */
-}
+
 .donate_title{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3rem;
@@ -427,6 +468,7 @@ h2 {
   background-blend-mode: overlay;
   background-image: url("farming.jpg");
 }
+
 .form-container{
   display: flex;
   flex-direction: column;
@@ -456,6 +498,7 @@ h2 {
   opacity: 1;
   background-color: #3A602F;
 }  
+
 input[type=text], input[type=email], input[type=number]{
   width: 100%;
   padding: 10px 90px;
@@ -467,3 +510,175 @@ input[type=text], input[type=email], input[type=number]{
   box-sizing: border-box;
 }
 
+/* ----------------------------Contact Info------------------------------------ */
+
+.contact_img{
+  margin-top: 10px;  
+  height: 100vh; 
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-image: url("hero5.jpg");
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  text-align:start ;
+  padding: 100px; 
+  gap: 8px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #B9BD41;
+  right: 0;
+  margin: 30px;
+  max-width: 500px;
+}
+/* Set a style for the submit button */
+.submit_btn {
+  background-color: #013220;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+ }
+
+ /* ----------------------------Sign Up------------------------------------ */
+
+.signup_img{
+  margin-top: 10px;  
+  height: 100vh; 
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-image: url("hero6.jpg");
+}
+
+input[type=text],
+ input[type=email], 
+ input[type=number]{
+  width: 100%;
+  padding: 10px 90px;
+  outline: none;
+  text-align: left;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-container{
+  display: flex;
+  flex-direction: column;
+  text-align:start ;
+  padding: 100px; 
+  gap: 8px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #B9BD41;
+  right: 0;
+  margin: 30px;
+  max-width: 500px;
+}
+/* Set a style for the submit button */
+.signup_btn {
+  background-color: #013220;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+ }
+
+  /* ----------------------------Sign In------------------------------------ */
+
+.signin-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.signin_img {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.signup_form {
+    padding: 20px;
+}
+.container3 {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.signin-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.signin-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.signin_img{
+  margin-top: 10px;  
+  height: 100vh; 
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-image: url("hero6.jpg");
+}
+
+.signin-container input[type="email"],
+.signin-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    text-align: left;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signin-container{
+  display: flex;
+  flex-direction: column;
+  text-align:start ;
+  padding: 100px; 
+  gap: 8px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #B9BD41;
+  right: 0;
+  margin: 30px;
+  max-width: 500px;
+}
+/* Set a style for the submit button */
+.signin_btn {
+  background-color: #013220;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+ }
