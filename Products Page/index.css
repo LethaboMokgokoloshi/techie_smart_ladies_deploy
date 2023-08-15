@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}    
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: rgb(94, 235, 90);
+}
+.home ul{
+    list-style: none;
+    display: flex;
+}
+.home ul li a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: white;
+}
+
+.search{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-input{
+    padding: 7px;
+    width: 30%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.fa{
+    padding: 7px;
+    background-color: rgb(94, 235, 90);
+    border: solid 1.5px black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-right: 10px;
+}
+
+
+/* ----------------- PRODUCT -------------------- */
+.products{
+    margin: 100px;
+}
+.products-images img{
+    width: 350px;
+    height: 200px;
+    object-fit: fill;
+}
+.products-images{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.produce{
+    display: flex;
+    flex-direction: column;
+}
+.produce img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.text{
+    width: 350px;
+    height: 200px;
+    object-fit: contain;
+    background-color: rgb(203, 236, 202);
+    color: rgb(110, 197, 93);
+    padding: 2rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* ------------------------REVIEW ---------------------------- */
+.reviews{
+    padding: 100px;
+    background-color: rgb(224, 245, 223);
+}
+.review-sec{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.customer{
+    background-color: white;
+    padding: 1rem;
+    width: 350px;
+    border-radius: 12px;
+}
+.customer img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.review-heading{
+    display: flex;
+    margin-bottom: 12px;
+}
+.review-heading img{
+    margin-right: 20px;
+}
+.review-text{
+    margin-top: 10px;
+}
+.review-text p{
+    color: green;
+}
