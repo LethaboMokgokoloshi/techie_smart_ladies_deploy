@@ -15,6 +15,105 @@ body {
 }
 
 /* ************** */
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo--header {
+  fill: #e6ebe9;
+  cursor: pointer;
+  transition: fill 0.3s;
+}
+
+.logo--header:hover {
+  fill: #011e13;
+  stroke: #011e13;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  list-style: none;
+  font-size: 2.4rem;
+}
+
+.menu__link:link,
+.menu__link:visited {
+  text-decoration: none;
+  color: #e6ebe9;
+  transition: color 0.3s;
+}
+
+.menu__link:hover,
+.menu__link:active {
+  color: #013220;
+  font-weight: bold;
+}
+
+.btn.btn--nav:link,
+.btn.btn--nav:visited {
+  padding: 1.2rem 2.4rem;
+  font-size: 2rem;
+  border-radius: 8px;
+  background-color: #013220;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.btn.btn--nav:hover,
+.btn.btn--nav:active {
+  background-color: #011e13;
+}
+
+
+
+/* ************** */
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(222, 226, 230, 0.8);
+  z-index: 99;
+}
+
+.sticky .logo--header {
+  width: 200px;
+  height: 8rem;
+  fill: #1a4736;
+  color: #678479;
+  cursor: pointer;
+}
+
+.sticky .logo--header:hover {
+  fill: #012d1d;
+}
+
+.sticky .menu__link:link,
+.sticky .menu__link:visited {
+  text-decoration: none;
+  color: #1a4736;
+  transition: color 0.3s;
+}
+
+.sticky .menu__link:hover,
+.sticky .menu__link:active {
+  color: #012d1d;
+}
+
+/* ************** */
 /* Main */
 
 
