@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px
+}
+
+body {
+  background-color: #fff;
+  color: #343a40;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(./images/sign.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.sign__box {
+  width: 60vw;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.sign__greeting {
+  background-color: #013220;
+  padding: 3.2rem;
+  color: #f8f9fa;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.logo--sign {
+  width: 120px;
+  height: 4rem;
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  fill: #d8dddc;
+}
+
+.sign__greeting-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.sign__greeting-heading {
+  font-size: 4.4rem;
+}
+
+.sign__greeting-text {
+  font-size: 1.8rem;
+}
+
+.sign__greeting-if {
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.sign__if-link:link,
+.sign__if-link:visited {
+  font-size: 1.4rem;
+  color: #cce334;
+  text-decoration: none;
+}
+
+.sign__if-link:hover,
+.sign__if-link:active {
+  text-decoration: underline;
+}
+
+.sign__form-container {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.sign__form-textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.sign__form-heading {
+  font-size: 4.4rem;
+}
+
+.sign__social {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.sign__form-textbox p {
+  font-size: 1.6rem;
+}
+
+.social__link.social__link--form:link,
+.social__link.social__link--form:visited {
+  font-size: 1.6rem;
+  color: #343a40;
+  border: 2px solid #898e96;
+}
+
+.social__link.social__link--form:hover,
+.social__link.social__link--form:active {
+  border-color: #013220;
+}
+
+
+.sign__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.sign__input {
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #898e96;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s;
+  color: #343a40;
+  background-color: inherit;
+}
+
+.sign__input--select {
+  width: 300px;
+  outline: none;
+}
+
+.btn.btn--form {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: #013220;
+  color: #fff;
+}
