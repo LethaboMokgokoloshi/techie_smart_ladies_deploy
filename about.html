@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  
+  <link rel="stylesheet" href="./general.css">
 
   <title>AgriGrowth - About</title>
 </head>
@@ -37,46 +38,43 @@
     </ul>
     </nav>
   </header>
-
-  <main class="main">
-    <section class="hero-section">
-      <div class="carousel">
-          <div class="slide"><img src="./hero.jpg" alt="Hero Image "></div>
-          <div class="slide"><img src="./hero1.jpg" alt="Hero Image 1"></div>
-          <div class="slide"><img src="./hero2.jpg" alt="Hero Image 2"></div>
-          <div class="slide"><img src="./hero3.jpg" alt="Hero Image 3"></div>
-      </div>
-      <div class="hero-section__text container">
-          <div class="empty"></div>
-          <h1 class="hero__heading">Dive into the World of Agriculture with AgriGrowth</h1>
-      </div>
-  </section>
-  
-  <script>
-      const carousel = document.querySelector('.carousel');
-      const slides = document.querySelectorAll('.slide');
-      let counter = 0;
-  
-      setInterval(() => {
-          slides.forEach(slide => slide.style.transform = `translateX(-${counter * 100}%)`);
-          counter = (counter + 1) % slides.length;
-      }, 3000);
-  </script>
-
-        <section class="about-section">
-            <h2>Our Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo in orci aliquam sollicitudin.</p>
-        </section>
-        <section class="team-section">
-            <h2>Our Team</h2>
-            <ul>
-                <li>Coder 1</li>
-                <li>Coder 2</li>
-                <li>Coder 3</li>
-            </ul>
-        </section>
-    </main>
-
+  <main>
+    <section class="about__first container">
+      <h1>Meet AgriGrowth</h1>
+      <p>AgriGrowth is a passionate community driven by a common goal: to revolutionize the way we approach agriculture. We’re farmers, experts, and enthusiasts united by our commitment to sustainable practices and knowledge sharing. Our platform is a hub of agricultural insights, resources, and connections, empowering individuals worldwide to grow smarter, greener, and more efficiently. Join us on this journey as we cultivate a brighter future for agriculture.
+        Welcome to AgriGrowth - where growth knows no bounds.
+        </p>
+    </section>
+    <section class="about__mission">
+      <h2>Our Mission</h2>
+      <p>Our mission is to revolutionize the agricultural sector by providing comprehensive, modern, and sustainable farming information, establishing efficient collection centers, and enabling seamless distribution networks. Through these initiatives, we aim to alleviate loss and poverty while fostering sustainable development, ultimately contributing to a thriving nation.</p>
+    </section>
+    <section class="about__vision">
+      <h2>Our Vision</h2>
+      <p>AgriGrowth envisions a future where sustainable agriculture is the driving force behind global prosperity. We strive to foster a community that empowers farmers, encourages responsible practices, and embraces innovation. Through AgriGrowth, we aim to revolutionize farming, ensuring abundant food, economic growth, and environmental harmony. Join us as we shape a world where agriculture thrives, communities flourish, and our planet prospers.”</p>
+    </section>
+    <section class="about__values">
+      <h2>Values</h2>
+      <ol>
+        <li>
+          <h3>Empowerment</h3>
+          <p>AgriGrowth is dedicated to empowering communities by providing them with the knowledge, resources, and opportunities to uplift themselves from poverty through sustainable agricultural practices</p>
+        </li>
+        <li>
+          <h3>Collaboration</h3>
+          <p>AgriGrowth believes that poverty eradication is a collective effort. We actively collaborate with local communities, organizations, and stakeholders to co-create solutions that address the unique challenges they face.</p>
+        </li>
+        <li>
+          <h3>Sustainability</h3>
+          <p>AgriGrowth’s commitment to sustainability ensures that its poverty eradication initiatives are enduring and environmentally responsible. We prioritize approaches that have a positive impact on both livelihoods and the environment.</p>
+        </li>
+        <li>
+          <h3>Innovation</h3>
+          <p>Innovation:We foster a culture of continuous learning and innovation, encouraging the adoption of modern technologies and creative solutions to address the challenges of poverty eradication through agriculture..</p>
+        </li>
+      </ol>
+    </section>
+  </main>
     <footer class="footer">
         <section class="footer__info">
           <div class="footer__logo-container">
