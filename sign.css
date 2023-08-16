@@ -106,7 +106,8 @@ body {
 }
 
 .sign__form-heading {
-  font-size: 4.4rem;
+  font-size: 3.2rem;
+  color: #1a4736;
 }
 
 .sign__social {
@@ -163,3 +164,7 @@ body {
   background-color: #013220;
   color: #fff;
 }
+
+.btn.btn--form:hover,
+.btn.btn--form:active{
+  background-color: #011e13;
