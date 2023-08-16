@@ -3,22 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }    
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 100px;
-    background-color: #013220;
-}
-.home ul{
-    list-style: none;
-    display: flex;
-}
-.home ul li a{
-    text-decoration: none;
-    margin-right: 15px;
-    color: white;
-}
 
 .search{
     margin-top: 10px;
